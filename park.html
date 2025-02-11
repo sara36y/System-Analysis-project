@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking System</title>
+    <link rel="stylesheet" href="park.css">
+    <link rel="stylesheet" href="parking.js">
+    <style>
+      /* Add your styles for the navigation bar here */
+      nav {
+          background-color: #333;
+          overflow: hidden;
+      }
+
+      nav a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      body {
+      background: url('images/wepik-export-20231126213729x7Lj.jpeg') center/cover no-repeat fixed;
+      background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+     
+      margin: 0; /* Remove default margin to ensure full coverage */
+    }
+    
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background:rgb(0, 0, 0);
+  }
+  .heading ul {
+    display: flex;
+  }
+  .logo a {
+    color: rgb(19, 18, 18);
+    transition-duration: 1s;
+    font-weight: 900;
+  }
+  .logo a:hover {
+    color: rgb(6, 135, 240);
+    transition-duration: 1s;
+  }
+  .heading ul li {
+    list-style: none;
+  }
+  .heading ul li a {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    color: white;
+    margin: 2px 14px;
+    font-size: 18px;
+    transition-duration: 1s;
+  }
+  .heading ul li a:active {
+    color: red;
+  }
+  .heading ul li a:hover {
+    color: yellow;
+    transition-duration: 1s;
+  }
+  
+  .heading ul li a::before {
+    content: "";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:white;
+    transition-duration: 1s;
+  }
+  .heading ul li a:hover::before {
+    width: 100%;
+    transition-duration: 1s;
+    background-color: rgb(243, 74, 7);
+  }
+  #input {
+    height: 30px;
+    width: 300px;
+    text-decoration: none;
+    border: 0px;
+    padding: 5px;
+  }
+  .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  </style>
+</head>
+  <body>
+    <header>
+    
+      <div class="logo p-2 m-2 ">
+          <a class="navbar-brand p-5" href="home.html">
+              <img src="images/logo.png" width="40" height="40" alt="Your Logo">
+              <span> Car Parking</span>
+            </a>
+      </div>
+         
+      <div class="heading pt-4">
+        <ul>
+      <li><a href="home.html" class="under">HOME</a></li>
+      <li><a href="about.html" class="under">ABOUT US</a></li>
+      <li><a href="LOGIN.html" class="under">YOUR ACCOUNT</a></li>
+      <li><a href="park.html" class="under">PARK HERE</a></li>
+      <li><a href="contactus.html" class="under">CONTACT US</a></li>
+        </ul>
+      </div>
+   
+    </header>
+    <!-- end navbar-->
+
+      <h1 style="padding: 10px; text-align:center ;" > Booking Here </h1>
+      <div class="container">
+      <form id="parking-form">
+            <label for="inputPassword" class="pass" style="font-size: 30px;">FullName</label>
+              <input type="text" class="fullName" id="name">
+            <label for="inputPassword" class="pass" style="font-size: 30px;">PlateNumber</label>
+                <input type="number" class="plate-number" id="pl-num">
+                <label for="inputPassword" class="pass" style="font-size: 30px;">Color</label>
+                <input type="text" class="car-color" id="carC">
+                <label for="inputPassword" class="pass" style="font-size: 30px;">PhoneNumber</label>
+                <input type="tel" class="tel-num" id="telNum">
+                  <label for="inputtime" class="time" style="font-size: 30px;">checkInTime</label>
+                    <input type="time" class="date" id="time">
+               <button type="button" class="primary" id="btn"> Park </button>
+            </form>
+           </div>
+            <div class=" card shadow" style="background-color: rgb(247, 235, 235);">
+                <table id="myTable" class=" table-responsive">
+                        <tr>
+                          <th scope="col">Full Name</th>
+                          <th scope="col"> Plate NUmber</th>
+                          <th scope="col"> Color</th>
+                          <th scope="col"> Phone Number</th>
+                          <th scope="col"> Check in time</th>
+                          <th scope="col"> totalcost</th>
+                          <th scope="col"> Exit Time</th>
+                          <th scope="col"> Delete</th>
+                          <th scope="col"><a href="index.html"><button type="button" class="primary" class ="primary" > Payment </a> </tr>
+                        </tr>
+                </table>
+              </div>
+              </div>
+              </div>
+            </div>
+            <script src="parking.js"></script>
+          </body>
+                <!-- Your form content... -->
+            </form>
+        </div>    
+    </div>
+    <script src="parking.js"></script>
+</body>
+</html>
