@@ -1,0 +1,12 @@
+button{
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 6px;
+    position: absolute;
+    background: #121317;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
